@@ -328,7 +328,29 @@ int main()
 	}*/
 
     //判断输入的正整数是否为素数(又称为质数：除了1和它本身外，不能被其他数整除)
-    
-    //测试git版本控制如何
+    /*int num;
+    printf("please input a number num:");
+	scanf("%d",&num);
+	printf("your number is num=%d\n",num);
+    for(int i=2;i<=num-1;i++)
+		if(num%i==0)
+			break;
+	if(i==num)
+		printf("the number that you have input is 质数\n");
+	else
+		printf("the number that you have input is not 质数\n");*/
+
+    //输出100-200之间的所有素数
+    /*printf("printf the 素数 all of the number from 100 to 200\n");
+	int num=0;
+	for(int i=100;i<=200;i++)
+	{
+		for(int j=2;j<=i-1;j++)
+			if(i%j==0)
+				break;
+	    if(j==i)
+			printf("%d ",i);
+	}
+    printf("\n");*/
 	return 0;
 }
