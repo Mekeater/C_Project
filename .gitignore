@@ -1,6 +1,2 @@
-*.dsp
-*.dsw
-*.ncb
-*.opt
-*.plg
+*.dsp *.dsw *.ncb *.opt *.plg
 
