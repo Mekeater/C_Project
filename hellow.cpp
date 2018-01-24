@@ -352,5 +352,72 @@ int main()
 			printf("%d ",i);
 	}
     printf("\n");*/
+
+    //输出200以内所有个位数为3且可被3整除
+    /*int num;
+	printf("num=");
+	scanf("%d",&num);
+	printf("最后一位数字:%d\n",num%10);
+	printf("剩余数字:%d\n",num/10);*/
+    
+	/*for(int num=0;num<=200;num++)
+	{
+		if(num%10==3&&(num/10)%3==0)
+			printf("%d ",num);
+	}
+	printf("\n");*/
+
+    //求输入的任意两个数字n和m的最小公倍数和最大公约数
+    /* ?? */
+    
+    //编程实现2/1+3/2+5/3+8/5+...前100相是和，保留两位小数(int 大小不够存储怎么办??)
+    /*float sum=0;
+	float num;
+	int fm=2,fz=1,n;
+	printf("%d/%d + ",fm,fz);
+	for(int i=0;i<9;i++)
+	{
+		num=fm/fz;
+		sum+=num;
+        n=fm;
+		fm=fm+fz;
+		fz=n;
+	    if(i==8)
+			printf("%d/%d ",fm,fz);
+		else
+			printf("%d/%d + ",fm,fz);
+	}
+	printf("=%.2f\n",sum);*/
+
+    //猴子吃桃问题,总共n个桃子，它每天这样吃桃子:(n/2+2) + ((n/2+2)/2+2) +(((n/2+2)/2+2)/2+2) +...第16天只剩下三个桃子,求n
+    /*int sum=0,num,iftotle=32,totle=31;
+    do
+	{
+		totle++;
+		for(int i=0;i<16;i++)
+		{
+			num=(iftotle/2)+2;
+			iftotle-=num;
+			sum+=num;
+		}
+		printf("%d\n",totle);
+	}while(totle!=sum+3);
+	printf("The monkey pick %d taozi",totle);
+	printf("\n");*/
+
+    //输出所有三位数的各位数字的立方和等于其本身，例如153
+    /*int ps1,ps2,ps3,sum=0;
+    for(int i=100;i<10000;i++)
+	{
+		ps3=i%10;
+		ps2=(i/10)%10;
+		ps1=(i/100)%10;
+		sum=pow(ps1,3)+pow(ps2,3)+pow(ps3,3);
+		if(sum==i)
+			printf("%d ",i);
+	}
+	printf("\n");*/
+
+
 	return 0;
 }
