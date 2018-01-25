@@ -6,21 +6,22 @@
 --------------------Configuration: FirstProgram - Win32 Debug--------------------
 </h3>
 <h3>Command Lines</h3>
-Creating temporary file "C:\Users\Administrator\AppData\Local\Temp\RSPB092.tmp" with contents
+Creating temporary file "C:\Users\Administrator\AppData\Local\Temp\RSPCEB4.tmp" with contents
 [
 /nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /FR"Debug/" /Fp"Debug/FirstProgram.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
 "F:\考研学习\复试准备\C语言深入学习\FirstProgram\hellow.cpp"
 ]
-Creating command line "cl.exe @C:\Users\Administrator\AppData\Local\Temp\RSPB092.tmp" 
-Creating temporary file "C:\Users\Administrator\AppData\Local\Temp\RSPB0A2.tmp" with contents
+Creating command line "cl.exe @C:\Users\Administrator\AppData\Local\Temp\RSPCEB4.tmp" 
+Creating temporary file "C:\Users\Administrator\AppData\Local\Temp\RSPCEC4.tmp" with contents
 [
 kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:yes /pdb:"Debug/FirstProgram.pdb" /debug /machine:I386 /out:"Debug/FirstProgram.exe" /pdbtype:sept 
 ".\Debug\hellow.obj"
 ]
-Creating command line "link.exe @C:\Users\Administrator\AppData\Local\Temp\RSPB0A2.tmp"
+Creating command line "link.exe @C:\Users\Administrator\AppData\Local\Temp\RSPCEC4.tmp"
 <h3>Output Window</h3>
 Compiling...
 hellow.cpp
+F:\考研学习\复试准备\C语言深入学习\FirstProgram\hellow.cpp(418) : warning C4101: 'diffnum' : unreferenced local variable
 Linking...
 Creating command line "bscmake.exe /nologo /o"Debug/FirstProgram.bsc"  ".\Debug\hellow.sbr""
 Creating browse info file...

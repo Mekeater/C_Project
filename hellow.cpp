@@ -368,6 +368,75 @@ int main()
 	printf("\n");*/
 
     //求输入的任意两个数字n和m的最小公倍数和最大公约数
+    /*1、求最大公约数用暴力枚举法(直接比较，循环出最大的公约数)*/
+    /*int num1,num2,diffnum,multiple;
+	printf("please input two number\n");
+	scanf("%d",&num1);
+    printf("num1=%d\n",num1);
+	scanf("%d",&num2);
+	printf("num2=%d\n",num2);
+	int smallernum,biggernum;
+	smallernum=num1>num2?num2:num1;
+	biggernum=num1>num2?num1:num2;
+	printf("the bigger number is %d\n",biggernum);
+	if(biggernum%smallernum==0)
+		printf("%d和%d的最大公约数为%d\n",smallernum,biggernum,smallernum);
+	else
+		for(int i=2;i<=smallernum/2;i++)
+		{
+			if(biggernum%i==0&&smallernum%i==0)
+				diffnum=i;
+		}
+		//求最小公倍数(两个数中最小的一个数字除以两个数的最大公约数再乘以两个数字中最大一个数字)
+    multiple=smallernum/diffnum * biggernum;
+    printf("%d和%d的最大公约数为:%d,最小公倍数为:%d\n",smallernum,biggernum,diffnum,multiple);*
+    
+	/*2、求最大公约数用辗转相除法又名欧几里得算法(两个正整数a和b（a>b），它们的最大公约数等于a除以b的余数c和b之间的最大公约数...直到两个数可以整除，或者其中一个数减小到1为止)*/
+    /*int num1,num2,diffnum,multiple,smallernumbegin,biggernumbegin;
+    printf("please input two number\n");
+	scanf("%d",&num1);
+    printf("num1=%d\n",num1);
+	scanf("%d",&num2);
+	printf("num2=%d\n",num2);
+	int smallernum,biggernum;
+	smallernumbegin=num1>num2?num2:num1;
+	biggernumbegin=num1>num2?num1:num2;
+	smallernum=num1>num2?num2:num1;
+	biggernum=num1>num2?num1:num2;
+	printf("the bigger number is %d\n",biggernumbegin);
+	do
+	{
+		num1=biggernum%smallernum;
+		num2=smallernum;
+		smallernum=num1>num2?num2:num1;
+	    biggernum=num1>num2?num1:num2;
+	}while(biggernum%smallernum!=0);
+	printf("最小数为%d 最大数为%d\n",smallernumbegin,biggernumbegin);
+    multiple=smallernumbegin/smallernum * biggernumbegin;
+    printf("最大公约数为:%d,最小公倍数为:%d\n",smallernum,multiple);*/
+    /*3、求最大公约数用更相减损术（两个正整数a和b（a>b），它们的最大公约数等于a-b的差值c和较小数b的最大公约数...直到两个数可以相等为止，最大公约数就是最终相等的两个数)*/
+    int num1,num2,diffnum,multiple,smallernumbegin,biggernumbegin;
+    printf("please input two number\n");
+	scanf("%d",&num1);
+    printf("num1=%d\n",num1);
+	scanf("%d",&num2);
+	printf("num2=%d\n",num2);
+	int smallernum,biggernum;
+	smallernumbegin=num1>num2?num2:num1;
+	biggernumbegin=num1>num2?num1:num2;
+	smallernum=num1>num2?num2:num1;
+	biggernum=num1>num2?num1:num2;
+	printf("the bigger number is %d\n",biggernumbegin);
+	do
+	{
+		num1=biggernum-smallernum;
+		num2=smallernum;
+        smallernum=num1>num2?num2:num1;
+	    biggernum=num1>num2?num1:num2;
+	}while(num1!=num2);
+	printf("最小数为%d 最大数为%d\n",smallernumbegin,biggernumbegin);
+    multiple=smallernumbegin/smallernum * biggernumbegin;
+    printf("最大公约数为:%d,最小公倍数为:%d\n",smallernum,multiple);
 
     //编程实现2/1+3/2+5/3+8/5+...前100相是和，保留两位小数(int 大小不够存储怎么办??)
     /*float sum=0;
