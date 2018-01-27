@@ -415,7 +415,7 @@ int main()
     multiple=smallernumbegin/smallernum * biggernumbegin;
     printf("最大公约数为:%d,最小公倍数为:%d\n",smallernum,multiple);*/
     /*3、求最大公约数用更相减损术（两个正整数a和b（a>b），它们的最大公约数等于a-b的差值c和较小数b的最大公约数...直到两个数可以相等为止，最大公约数就是最终相等的两个数)*/
-    int num1,num2,diffnum,multiple,smallernumbegin,biggernumbegin;
+    /*int num1,num2,diffnum,multiple,smallernumbegin,biggernumbegin;
     printf("please input two number\n");
 	scanf("%d",&num1);
     printf("num1=%d\n",num1);
@@ -436,7 +436,7 @@ int main()
 	}while(num1!=num2);
 	printf("最小数为%d 最大数为%d\n",smallernumbegin,biggernumbegin);
     multiple=smallernumbegin/smallernum * biggernumbegin;
-    printf("最大公约数为:%d,最小公倍数为:%d\n",smallernum,multiple);
+    printf("最大公约数为:%d,最小公倍数为:%d\n",smallernum,multiple);*/
 
     //编程实现2/1+3/2+5/3+8/5+...前100相是和，保留两位小数(int 大小不够存储怎么办??)
     /*float sum=0;
@@ -485,7 +485,7 @@ int main()
 			printf("%d ",i);
 	}
 	printf("\n");*/
-
-
+    printf("the four capters of C Language is end.\n");
+	printf("if you want to the later capters, please attention to the next code.\n");
 	return 0;
 }
