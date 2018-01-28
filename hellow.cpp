@@ -487,5 +487,6 @@ int main()
 	printf("\n");*/
     printf("the four capters of C Language is end.\n");
 	printf("if you want to the later capters, please attention to the next code.\n");
+	printf("I give a message to you who are Github!\n");
 	return 0;
 }
